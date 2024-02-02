@@ -1,0 +1,22 @@
+{
+    "name": "Leetcode Premium Bypasser",
+    "version": "1.1.2",
+    "description": "Enables leetcode premium features",
+    "permissions": ["storage", "unlimitedStorage","tabs"],
+    "action": {
+      "default_popup": "dist/index.html"
+    },
+    "manifest_version": 3, 
+    "content_scripts": [
+        {
+          "css": ["dist/style.css"], 
+          "js": ["/dist/main.js"],
+          "matches": [
+            "https://leetcode.com/*"
+          ]
+        }
+      ], 
+    "icons": {
+      "96": "/assets/logo.png"
+    }
+}
